@@ -21,6 +21,7 @@ services:
     image: ghcr.io/open-webui/open-webui:main
     environment:
       - OLLAMA_API_BASE_URL=http://ollama:11434/api
+      - WEBUI_AUTH=False
     volumes:
       - ./data/open-webui:/app/backend/data
     ports:
